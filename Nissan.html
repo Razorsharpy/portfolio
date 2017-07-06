@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>	
+    <link type="text/css" rel="stylesheet" href="css/pure-min.css"/>
+	<link type="text/css" rel="stylesheet" href="css/grids-responsive-min.css"/>
+	<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<title>Product Title</title>
+
+        
+</head>
+<body>
+
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/grids-responsive-min.css">
+<!--<![endif]-->
+
+<!-- Header -->
+
+    <div class="navigation pure-g" id="menu">
+        <div class="brand pure-u-1 pure-u-md-1-2">
+            <div class="pure-menu">
+                <a href="index.html" class="pure-menu-heading brand-name">Abdullah Alhamidi</a>
+                <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+            </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="pure-menu pure-menu-horizontal custom-can-transform">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="about.html" class="pure-menu-link">About</a></li>
+                    <li class="pure-menu-item"><a href="http://jdm-expo.com/3-vehicle-inventory/mattborchert?u=mattborchert" target="_blank" class="pure-menu-link">JDM EXPO</a></li>
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+    
+    <script>
+    (function (window, document) {
+    var menu = document.getElementById('menu'),
+        WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+    
+    function toggleHorizontal() {
+        [].forEach.call(
+            document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+            function(el){
+                el.classList.toggle('pure-menu-horizontal');
+            }
+        );
+    };
+    
+    function toggleMenu() {
+        // set timeout so that the panel has a chance to roll up
+        // before the menu switches states
+        if (menu.classList.contains('open')) {
+            setTimeout(toggleHorizontal, 500);
+        }
+        else {
+            toggleHorizontal();
+        }
+        menu.classList.toggle('open');
+        document.getElementById('toggle').classList.toggle('x');
+    };
+    
+    function closeMenu() {
+        if (menu.classList.contains('open')) {
+            toggleMenu();
+        }
+    }
+    
+    document.getElementById('toggle').addEventListener('click', function (e) {
+        toggleMenu();
+    });
+    
+    window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+    })(this, this.document);
+    
+    </script>
+    
+ <!-- Product Section -->
+       <div class="portfolio pure-g">
+           <div class="pure-u-1">
+               <div class="product">
+                   <img class="pure-img" src="images/portfolio/nissan%20r34.PNG" />
+                   <h3>Skyline GTR R34 V Spec</h3>
+                   <p>The Nissan Skyline R34 is one of the best cars ever built. Sadly its illigal in the USA because of the 25 import rule. With 325 HP this baby is fast as hell with AWD 6-speed manual it does From 0-60 in 4.9!  
+                   </p>
+                   
+                   <img class="pure-img" src="images/portfolio/nissanr33.PNG" />
+                   <h3>Nissan Skyline GTR R32 </h3>
+                   <p>The Nissan Skyline R32 is the little sister of the R34. With 276 hp and 266 lb.ft of torque. Weights at 3,146lbs. This particular Nissan Skyline R33 GTR has a 5 speed/ Manual gearbox with the power being delivered through it's AWD system. Its 24 valve St6 Twin Turbo Petrol engine. Does 0-60 in 5.0 secs   
+                   </p>
+                   
+                   <img class="pure-img" src="images/portfolio/300zx.PNG" />
+                   <h3>Niisan 300ZX</h3>
+                   <p>The turbo variant has twin Garrett turbochargers and dual intercoolers producing 300 hp (224 kW; 304 PS) and 283 lb. ft (384 N. m) of torque. Performance varied from 0-60 times of 5.0-6.0 seconds depending on the source, and it had a governed top speed of 155 mph.
+                   </p>
+                   
+                   <img class="pure-img" src="images/portfolio/240SX.PNG" />
+                   <h3>Nissan 240SX</h3>
+                   <p>The 240SX is one of the best drifting car ever. This car is used in every single Drifting competition
+                   </p>
+                   
+                   <img class="pure-img" src="images/portfolio/silvia%20s15.PNG" />
+                   <h3>Nissan-Silvia-Spec-R-S15</h3>
+                   <p>The Nissan Skyline R34 is one of the best cars ever built. Sadly its illigal in the USA because of the 25 import rule. With 325 HP this baby is fast as hell with AWD 6-speed manual it does From 0-60 in 4.9!  
+                   </p>
+                   
+                   <img class="pure-img" src="images/portfolio/350" />
+                   <h3>Nissan 350Z</h3>
+                   <p>Nissan 350Z is another Drift and street car king. It has 306hp and does from 0-60 in 5.2 this car was used in alot of the fast and furious car movies.
+                   </p>
+                   
+                    <img class="pure-img" src="images/portfolio/nissan350z.PNG" />
+                   <h3>Nissan-Silvia-Spec-R-S15</h3>
+                   <p>The Nissan Skyline R34 is one of the best cars ever built. Sadly its illigal in the USA because of the 25 import rule. With 325 HP this baby is fast as hell with AWD 6-speed manual it does From 0-60 in 4.9!  
+                   </p>
+          
+                </div>
+           </div>
+       </div> <!-- end portfolio pure-g --> 
+        
+    <!-- Footer Elements -->
+
+
+
+
+
+
+</body>
+</html>
